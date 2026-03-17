@@ -1,0 +1,105 @@
+.resume-section {
+  background: var(--gradient-1);
+  color: var(--text-color);
+  padding: 4rem 1rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.resume-container {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.resume-title {
+  font-size: 1.6rem; /* compact */
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #60a5fa, #34d399);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  text-transform: none;
+}
+
+.resume-description {
+  color: var(--subtitle-color);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-inline: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.resume-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.resume-btn {
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);
+  letter-spacing: 0.5px;
+}
+
+.resume-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(14, 165, 233, 0.5);
+  filter: brightness(1.1);
+}
+
+.resume-btn:active {
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .resume-section {
+    padding: 2.5rem 0.8rem;
+  }
+
+  .resume-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .resume-btn {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .resume-buttons {
+    gap: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-section {
+    padding: 1.8rem 0.6rem;
+  }
+
+  .resume-title {
+    font-size: 1.1rem;
+  }
+
+  .resume-btn {
+    padding: 0.45rem 1rem;
+    font-size: 0.85rem;
+  }
+}

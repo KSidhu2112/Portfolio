@@ -1,0 +1,234 @@
+.achievements {
+  padding: 4rem 0.75rem;
+  background: var(--section-bg-alt);
+  color: var(--text-color);
+  text-align: center;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.achievements-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.achievements-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  color: #00bcd4;
+  position: relative;
+}
+
+.achievements-title::after {
+  content: '';
+  width: 100px;
+  height: 3px;
+  background: #00bcd4;
+  display: block;
+  margin: 0.5rem auto 1.5rem;
+  border-radius: 2px;
+}
+
+.achievements-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.achievements-subtitle {
+  color: #b5c6e0;
+  font-size: 1rem;
+  margin: 0;
+  max-width: 600px;
+}
+
+.linkedin-achievements-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(90deg, #60a5fa, #a78bfa, #c084fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  padding: 0.75rem 1.8rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(0, 119, 181, 0.3);
+}
+
+.linkedin-achievements-btn:hover {
+  transform: translateY(-3px);
+  background: #008cd1;
+  box-shadow: 0 8px 25px rgba(0, 119, 181, 0.5);
+  filter: brightness(1.1);
+}
+
+.linkedin-achievements-btn svg {
+  font-size: 1.2rem;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  color: #ffcc00;
+  gap: 0.5rem;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.achievement-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  padding: 1rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.22);
+  text-align: left;
+}
+
+.achievement-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 5px 18px rgba(0, 188, 212, 0.25);
+}
+
+.achievement-icon {
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+  display: block;
+  text-align: center;
+}
+
+.achievement-card h4 {
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  color: #00e0ff;
+  text-align: center;
+}
+
+.achievement-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.achievement-card ul li {
+  font-size: 0.9rem;
+  color: #d4e1f2;
+  margin: 0.25rem 0;
+}
+
+.achievement-card p {
+  color: #cfd8e8;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.achievement-card.full-width {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.horizontal-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none !important;
+}
+
+.horizontal-list li {
+  background: rgba(0, 188, 212, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 188, 212, 0.3);
+  font-weight: 600;
+  color: #00e0ff !important;
+}
+
+/* Icon Colors */
+.leetcode {
+  color: #f89f1b;
+}
+
+.codechef {
+  color: #b58969;
+}
+
+.java {
+  color: #f44336;
+}
+
+.dsa {
+  color: #2196f3;
+}
+
+.coding {
+  color: #4caf50;
+}
+[data-theme='light'] .achievement-card h4 {
+  color: var(--accent-color);
+}
+[data-theme='light'] .card-link {
+  color: var(--secondary-accent);
+}
+
+.smartinterviews {
+  color: #FFD700;
+}
+
+.contests {
+  color: #60A5FA;
+}
+
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: #00bcd4;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.8rem;
+  transition: all 0.2s ease;
+  width: fit-content;
+}
+
+.card-link:hover {
+  color: #fff;
+  transform: translateX(3px);
+  text-shadow: 0 0 8px rgba(0, 188, 212, 0.6);
+}
+
+.card-link.center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.card-link.mt-2 {
+  margin-top: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .achievements-title {
+    font-size: 1.25rem;
+  }
+
+  .section-heading {
+    font-size: 1rem;
+  }
+
+  .achievement-card {
+    padding: 0.75rem;
+  }
+}

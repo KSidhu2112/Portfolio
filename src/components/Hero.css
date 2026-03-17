@@ -1,0 +1,298 @@
+.hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  overflow: hidden;
+  background: var(--gradient-1);
+  padding-top: 70px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.05), transparent 50%);
+  pointer-events: none;
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  /* tighter */
+  max-width: 1100px;
+  /* smaller max width */
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+  /* compact padding */
+}
+
+.hero-text {
+  flex: 1 1 60%;
+  z-index: 2;
+}
+
+/* 🌟 Mobile Image */
+.profile-image-hero-mobile {
+  width: 120px;
+  /* more compact */
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+  margin-bottom: 1rem;
+  display: none;
+  animation: popIn 700ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* ✨ Hero Text */
+.hero-welcome {
+  margin: 0 0 0.4rem 0;
+  font-weight: 500;
+  font-size: 1rem;
+  /* compact */
+  color: var(--subtitle-color);
+  transform: translateY(10px);
+  opacity: 0;
+  animation: slideUp 600ms ease forwards 150ms;
+}
+
+.hero-name {
+  margin: 0;
+  font-size: 3.6rem;
+  /* compact heading */
+  line-height: 1.05;
+  background: linear-gradient(90deg, #6ee7b7, #60a5fa, #c084fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  transform: translateY(12px) scale(0.99);
+  opacity: 0;
+  animation: popIn 700ms cubic-bezier(.2, .9, .3, 1) forwards 250ms;
+}
+
+.hero-role {
+  margin: 0.8rem 0 1.25rem 0;
+  font-size: 1rem;
+  /* compact role */
+  color: var(--subtitle-color);
+  max-width: 42rem;
+  transform: translateY(10px);
+  opacity: 0;
+  animation: slideUp 600ms ease forwards 400ms;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  /* tighter */
+  margin-top: 1rem;
+  transform: translateY(12px);
+  opacity: 0;
+  animation: slideUp 700ms ease forwards 700ms;
+}
+
+/* 🎯 Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.25rem;
+  /* compact buttons */
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.btn.primary {
+  background: linear-gradient(90deg, #06b6d4, #3b82f6);
+  color: white;
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.15);
+}
+
+.btn.primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(59, 130, 246, 0.22);
+}
+
+.btn.ghost {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--card-border);
+}
+
+.btn.ghost:hover {
+  transform: translateY(-4px);
+  background: var(--card-border);
+}
+
+/* 🎨 Visual / Frame */
+.hero-visual {
+  flex: 0 0 300px;
+  /* compact visual */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.visual-card {
+  width: 260px;
+  /* compact */
+  height: 260px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  box-shadow: 0 18px 48px rgba(8, 16, 30, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transform: rotate(-10deg) translateY(4px);
+  animation: float 6s ease-in-out infinite;
+  backdrop-filter: blur(6px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+.visual-card .profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.18);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 220ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visual-card .profile-image:hover {
+  transform: scale(1.06) rotate(2deg);
+  border-color: rgba(96, 165, 250, 0.4);
+}
+
+.hero:before,
+.hero:after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(45px);
+  opacity: 0.15;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+[data-theme='light'] .hero:before,
+[data-theme='light'] .hero:after {
+  opacity: 0.08;
+}
+
+.hero:before {
+  width: 380px;
+  height: 380px;
+  right: -100px;
+  top: -80px;
+  background: #7c3aed;
+}
+
+.hero:after {
+  width: 300px;
+  height: 300px;
+  left: -90px;
+  bottom: -60px;
+  background: #06b6d4;
+}
+
+/* Profile Image is now handled by the visual-card selector above */
+
+/* ✨ Animations */
+@keyframes float {
+  0% {
+    transform: rotate(-12deg) translateY(6px);
+  }
+
+  50% {
+    transform: rotate(-10deg) translateY(-10px);
+  }
+
+  100% {
+    transform: rotate(-12deg) translateY(6px);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    transform: translateY(20px) scale(0.95);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateY(-3px) scale(1.02);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* 📱 Responsive Tweaks */
+@media (max-width: 900px) {
+  .hero .container {
+    padding: 2rem 1rem;
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+  }
+
+  .visual-card {
+    width: 220px;
+    height: 220px;
+  }
+
+  .hero-name {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-visual {
+    display: none;
+  }
+
+  .profile-image-hero-mobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-role {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .hero-role {
+    font-size: 0.95rem;
+  }
+
+  .hero .container {
+    padding: 1.2rem 0.75rem;
+  }
+}
