@@ -120,7 +120,7 @@
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
-  color: #fff;
+  color: var(--mobile-menu-color);
   z-index: 1001;
 }
 

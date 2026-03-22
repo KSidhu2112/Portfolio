@@ -15,7 +15,7 @@
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 0.6rem;
-  color: #00bcd4;
+  color: var(--achievement-title-color);
   position: relative;
 }
 
@@ -23,7 +23,7 @@
   content: '';
   width: 100px;
   height: 3px;
-  background: #00bcd4;
+  background: var(--achievement-title-color);
   display: block;
   margin: 0.5rem auto 1.5rem;
   border-radius: 2px;
@@ -38,7 +38,7 @@
 }
 
 .achievements-subtitle {
-  color: #b5c6e0;
+  color: var(--subtitle-color);
   font-size: 1rem;
   margin: 0;
   max-width: 600px;
@@ -78,7 +78,7 @@
   justify-content: center;
   font-size: 1.15rem;
   margin-bottom: 1rem;
-  color: #ffcc00;
+  color: var(--section-heading-color);
   gap: 0.5rem;
 }
 
@@ -100,7 +100,7 @@
 
 .achievement-card:hover {
   transform: translateY(-6px);
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--card-hover-bg);
   box-shadow: 0 5px 18px rgba(0, 188, 212, 0.25);
 }
 
@@ -114,7 +114,7 @@
 .achievement-card h4 {
   font-size: 1rem;
   margin-bottom: 0.6rem;
-  color: #00e0ff;
+  color: var(--achievement-heading-color);
   text-align: center;
 }
 
@@ -125,12 +125,12 @@
 
 .achievement-card ul li {
   font-size: 0.9rem;
-  color: #d4e1f2;
+  color: var(--card-text-secondary);
   margin: 0.25rem 0;
 }
 
 .achievement-card p {
-  color: #cfd8e8;
+  color: var(--card-text-tertiary);
   font-size: 0.85rem;
   text-align: center;
 }
@@ -154,7 +154,7 @@
   border-radius: 20px;
   border: 1px solid rgba(0, 188, 212, 0.3);
   font-weight: 600;
-  color: #00e0ff !important;
+  color: var(--achievement-heading-color) !important;
 }
 
 /* Icon Colors */
@@ -177,12 +177,7 @@
 .coding {
   color: #4caf50;
 }
-[data-theme='light'] .achievement-card h4 {
-  color: var(--accent-color);
-}
-[data-theme='light'] .card-link {
-  color: var(--secondary-accent);
-}
+
 
 .smartinterviews {
   color: #FFD700;
@@ -195,7 +190,7 @@
 .card-link {
   display: block;
   text-decoration: none;
-  color: #00bcd4;
+  color: var(--achievement-title-color);
   font-size: 0.85rem;
   font-weight: 600;
   margin-top: 0.8rem;
@@ -204,7 +199,7 @@
 }
 
 .card-link:hover {
-  color: #fff;
+  color: var(--icon-hover-color);
   transform: translateX(3px);
   text-shadow: 0 0 8px rgba(0, 188, 212, 0.6);
 }

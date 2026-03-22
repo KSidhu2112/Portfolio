@@ -62,9 +62,9 @@
 .goals-section {
   margin-bottom: 1.2rem;
   padding: 0.9rem;
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--card-section-bg);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--card-section-border);
   transform: translateY(10px);
   opacity: 0;
   animation: fadeInUp 0.45s ease-out forwards;
@@ -103,9 +103,9 @@
 .point {
   text-align: center;
   padding: 0.85rem;
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--card-section-bg);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--card-section-border);
   min-width: 110px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
   transition: all 0.25s ease;
@@ -115,13 +115,13 @@
   display: block;
   font-size: 1.25rem;
   font-weight: 800;
-  color: #60a5fa;
+  color: var(--point-highlight);
   margin-bottom: 0.35rem;
 }
 
 .point .label {
   font-size: 1.1rem;
-  color: #cbd5e1;
+  color: var(--point-label);
   text-transform: uppercase;
   letter-spacing: 0.75px;
   font-weight: 600;
@@ -144,7 +144,7 @@
 .passion-section:hover,
 .goals-section:hover,
 .point:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--card-hover-bg);
   transform: translateY(-4px);
   box-shadow: 0 5px 20px rgba(96, 165, 250, 0.25);
 }

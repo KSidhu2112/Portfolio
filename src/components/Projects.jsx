@@ -34,7 +34,7 @@ const projects = [
     tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'HTML', 'CSS', 'JavaScript'],
     impact: `Created a reliable ecosystem for students to connect with qualified teachers, promoting equal access to education.`,
     live: '#',
-    code: '#'
+    code: 'https://github.com/siddikoushik/learnhub'
   }
 ]
 

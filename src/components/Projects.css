@@ -119,11 +119,11 @@
 
 /* 💡 Impact Box */
 .project-impact {
-  background: rgba(148, 163, 184, 0.06);
-  border-left: 3px solid #38bdf8;
+  background: var(--card-section-bg);
+  border-left: 3px solid var(--accent-color);
   padding: 0.5rem 0.7rem;
   border-radius: 0.4rem;
-  color: #e2e8f0;
+  color: var(--impact-text);
   font-size: 0.8rem;
 }
 
@@ -158,8 +158,8 @@
 
 .project-link {
   background: transparent;
-  color: #93c5fd;
-  border: 1px solid #2563eb;
+  color: var(--link-color);
+  border: 1px solid var(--link-border-color);
   padding: 0.4rem 0.9rem;
   border-radius: 0.45rem;
   text-decoration: none;

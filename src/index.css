@@ -10,6 +10,28 @@
   --section-bg-alt: #0a1220;
   --gradient-1: linear-gradient(180deg, #0a1220 0%, #0b1b35 50%, #10243f 100%);
   --subtitle-color: #b5c6e0;
+  --point-label: #cbd5e1;
+  --point-highlight: #60a5fa;
+  --card-text-secondary: #d4e1f2;
+  --card-text-tertiary: #cfd8e8;
+  --impact-text: #e2e8f0;
+  --footer-text: #64748b;
+  --section-heading-color: #ffcc00;
+  --achievement-title-color: #00bcd4;
+  --achievement-heading-color: #00e0ff;
+  --link-color: #93c5fd;
+  --link-border-color: #2563eb;
+  --card-hover-bg: rgba(255, 255, 255, 0.1);
+  --card-section-bg: rgba(255, 255, 255, 0.06);
+  --card-section-border: rgba(255, 255, 255, 0.08);
+  --overlay-bg: rgba(255, 255, 255, 0.05);
+  --icon-hover-color: #fff;
+  --icon-hover-border: rgba(255, 255, 255, 0.3);
+  --focus-bg: rgba(15, 23, 42, 0.8);
+  --scrollbar-thumb: #334155;
+  --scrollbar-thumb-hover: #475569;
+  --mobile-menu-color: #fff;
+  --iframe-bg: #1a1a2e;
 }
 
 [data-theme='light'] {
@@ -24,6 +46,28 @@
   --section-bg-alt: #f1f5f9;
   --gradient-1: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
   --subtitle-color: #475569;
+  --point-label: #475569;
+  --point-highlight: #0ea5e9;
+  --card-text-secondary: #334155;
+  --card-text-tertiary: #475569;
+  --impact-text: #334155;
+  --footer-text: #94a3b8;
+  --section-heading-color: #d97706;
+  --achievement-title-color: #0891b2;
+  --achievement-heading-color: #0891b2;
+  --link-color: #2563eb;
+  --link-border-color: #93c5fd;
+  --card-hover-bg: rgba(0, 0, 0, 0.04);
+  --card-section-bg: rgba(0, 0, 0, 0.03);
+  --card-section-border: rgba(0, 0, 0, 0.08);
+  --overlay-bg: rgba(0, 0, 0, 0.03);
+  --icon-hover-color: #0f172a;
+  --icon-hover-border: rgba(0, 0, 0, 0.2);
+  --focus-bg: #ffffff;
+  --scrollbar-thumb: #cbd5e1;
+  --scrollbar-thumb-hover: #94a3b8;
+  --mobile-menu-color: #0f172a;
+  --iframe-bg: #f8fafc;
 }
 
 html {
@@ -53,12 +97,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #334155;
+  background: var(--scrollbar-thumb);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #475569;
+  background: var(--scrollbar-thumb-hover);
 }
 
 h1, h2, h3, h4, h5, h6 {

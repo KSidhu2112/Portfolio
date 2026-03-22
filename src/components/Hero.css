@@ -13,7 +13,7 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.05), transparent 50%);
+  background: radial-gradient(ellipse at center, var(--overlay-bg), transparent 50%);
   pointer-events: none;
 }
 
@@ -148,9 +148,9 @@
   /* compact */
   height: 260px;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  background: linear-gradient(135deg, var(--card-section-bg), var(--overlay-bg));
   box-shadow: 0 18px 48px rgba(8, 16, 30, 0.6),
-    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    inset 0 1px 0 var(--overlay-bg);
   transform: rotate(-10deg) translateY(4px);
   animation: float 6s ease-in-out infinite;
   backdrop-filter: blur(6px);
@@ -166,7 +166,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid rgba(255, 255, 255, 0.18);
+  border: 4px solid var(--card-section-border);
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 220ms cubic-bezier(0.4, 0, 0.2, 1);
 }
