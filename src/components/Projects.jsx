@@ -16,8 +16,8 @@ const projects = [
     ],
     tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'HTML', 'CSS', 'JavaScript'],
     impact: `Bridged the gap between donors and the underprivileged, simplifying community-driven charity and resource sharing.`,
-    live: '#',
-    code: '#'
+    live: 'https://carebridgefrontend.netlify.app/',
+    code: 'https://github.com/KSidhu2112/CareBridge.git'
   },
   {
     id: 'learnhub',
@@ -33,8 +33,8 @@ const projects = [
     ],
     tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'HTML', 'CSS', 'JavaScript'],
     impact: `Created a reliable ecosystem for students to connect with qualified teachers, promoting equal access to education.`,
-    live: '#',
-    code: 'https://github.com/siddikoushik/learnhub'
+    live: 'https://learnhubcmr.netlify.app/',
+    code: 'https://github.com/KSidhu2112/LearnHub.git'
   }
 ]
 

@@ -3,7 +3,7 @@ import { FiEye, FiDownload, FiFileText } from 'react-icons/fi';
 import './Resume.css';
 
 const Resume = () => {
-  const resumePath = '/Sidhu_Resume.pdf';
+  const resumePath = '/Resume-IV.pdf';
 
   return (
     <section className="resume-section" id="resume">
